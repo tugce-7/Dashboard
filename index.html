@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Tammudu+2&family=Maven+Pro&display=swap" rel="stylesheet"></head>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<body>
+<!--Sidebar Menu-->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul>
+            <li>
+                <div class="user-wrapper text-center">
+                    <img src="avatar.png" width="70px" height="70px">
+                </div>
+            </li>
+            <li>
+                <a href="" class="active"> <i class="fas fa-home"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href=""> <i class="far fa-calendar-minus"></i>
+                    <span>CALENDAR</span>
+                </a>
+            </li>
+            <li>
+                <a href=""> <i class="far fa-envelope"></i>
+                    <span>MAIL</span>
+                </a>
+            </li>
+            <li>
+                <a href=""><i class="far fa-comment"></i>
+                    <span>COMMENT</span>
+                </a>
+            </li>
+            <li>
+                <a href=""> <i class="far fa-user"></i>
+                <span>PROFILE</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+
+<!-- Main Content-->
+    <div class="main-content">
+        <!--HEADER-->
+         <div class=" header row ml-1 mt-4 ">
+                <div class="col-10   d-flex justify-content-start ">
+                    <h3>
+                        <label for="check" >
+                        <i class="fas fa-bars"></i>
+                        
+                        </label>DASHBOARD
+                       
+                    </h3>      
+                    <div style="margin-left: 30px;">
+                        <p>Welcome!</p>
+                        <h4 style="margin-top: 0;">JANE DOE</h4></div>                       
+                   
+
+                </div>
+                <div class="col-2 ml-auto">
+                    <button class="btn btn-light  " style="border-radius: 20px; background-color:#6c5ce7; border: none; color:honeydew;">New Project</button>
+                </div>
+            
+
+         </div>
+         <!--HEADER-->
+
+         <!-- ROW 1-->
+         <div class=" container mt-3 mb-5 mr-2 ml-2">
+            <div class="row">
+                <!--ISTATISTIC TABLE-->
+                <div class="col-8">                
+                    <div class="card shadow " style="width:700px; height: 250px; background-color:honeydew  ; color:#6c5ce7;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <p style="font-weight:bold; margin-bottom: 0;">STATISTIC </p>
+                                <p class="card-text">Processes</p>
+                            </div>
+                            <div class="card-body">
+                                <canvas id="lineChart"></canvas>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                
+                
+                </div>
+                <!-- 2 CARDS-->
+                <div class="col-4">
+                    <div class="row">
+                        <div class="card shadow" style="width:430px; height:120px; background-color:  #6c5ce7; color:honeydew;">
+                            <div class="card-body">
+                            <div class="card-title">
+                                <h6 style=" margin-bottom: 0;">MONTHLY GOAL</h6>
+                                <p class="card-text ">January</p></div>
+                            
+                             </div>
+                            <div class="card-body mb-5">
+                            <span><i class="fas fa-dollar-sign fa-1x"></i></span>
+                            <span style="font-size: 36px; font-weight: bold;">1.000.000 </span>
+                            </div>
+                            
+                           
+                        </div>   
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="card shadow" style="width:430px; height:120px; background-color:honeydew  ; color:#6c5ce7;">
+                            <div class="card-body ">
+                                <div class="card-title ">PROJECTION <i class="fas fa-ellipsis-h"></i>
+                                <p class="card-text">January 4th </p>
+                                </div>
+                                <span><i class="fas fa-dollar-sign fa-1x"></i></span>
+                            <span style="font-size: 25px; font-weight: bold;">265.000 </span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--ROW 1 END-->
+
+
+        <!--ROW 2 -->
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <!--CHAT PANEL-->
+                <div class="col-4">
+                    <div class="card shadow" style="width:350px; height: 400px; background-color:honeydew  ; color:#6c5ce7;">
+                            <div class="card-body justify-content-between">
+                                 <p>CHAT<i class="fas fa-ellipsis-h"></i></p> 
+                            
+                             <div id="friends">
+                                <div class="friend">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_deep-purple_white_letter-p.svg/640px-Eo_circle_deep-purple_white_letter-p.svg.png" />
+                                    <p>
+                                        <strong>Peter Dawson</strong><br>
+                                        <span>Developer</span>
+                                    </p>
+                                    <div class="status available"></div>
+                                </div>
+                                
+                                <div class="friend">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Eo_circle_deep-purple_letter-g.svg/640px-Eo_circle_deep-purple_letter-g.svg.png" />
+                                    <p>
+                                        <strong>Gina Stewart</strong><br>
+                                        <span>Designer</span>
+                                    </p>
+                                    <div class="status available"></div>
+                                </div>
+                                
+                                <div class="friend">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eo_circle_deep-purple_letter-j.svg/640px-Eo_circle_deep-purple_letter-j.svg.png" />
+                                    <p>
+                                        <strong>Janet Smith</strong><br>
+                                        <span>Frontend Developer</span>
+                                    </p>
+                                    <div class="status  available"></div>
+                                </div>
+                                
+                                <div class="friend">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Eo_circle_deep-purple_white_letter-m.svg/640px-Eo_circle_deep-purple_white_letter-m.svg.png" />
+                                    <p>
+                                        <strong>Mia Wilde</strong><br>
+                                        <span>Copyrighter</span>
+                                    </p>
+                                    <div class="status busy"></div>
+                                </div>
+                                
+                               
+                                
+                            </div> 
+                            
+
+                            
+                        </div>   
+                    </div>
+                </div>
+                <!-- CALENDAR-->
+                <div class="col-8">
+                    <div class="card shadow" style="width:750px; height: 400px; background-color:honeydew  ; color:#6c5ce7;">
+                        <div class="card-body">
+                           <div class="row">
+                            <div class="col-6">                                
+                                <p>UPCOMING APPOINTMENTS</p> 
+                                <div id="friends">
+                                    <div class="friend">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_deep-purple_white_letter-p.svg/640px-Eo_circle_deep-purple_white_letter-p.svg.png" />
+                                        <p>
+                                            <strong>Peter Dawson</strong><br>
+                                            <span>Developer</span>
+                                        </p>
+                                        <div class="status available"></div>
+                                    </div>
+                                    
+                                    <div class="friend">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Eo_circle_deep-purple_letter-g.svg/640px-Eo_circle_deep-purple_letter-g.svg.png" />
+                                        <p>
+                                            <strong>Gina Stewart</strong><br>
+                                            <span>Designer</span>
+                                        </p>
+                                        <div class="status available"></div>
+                                    </div>
+                                    
+                                    <div class="friend">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eo_circle_deep-purple_letter-j.svg/640px-Eo_circle_deep-purple_letter-j.svg.png" />
+                                        <p>
+                                            <strong>Janet Smith</strong><br>
+                                            <span>Frontend Developer</span>
+                                        </p>
+                                        <div class="status  available"></div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-6">CALENDAR</div>
+
+                           </div>
+
+                            <!-- <div class="container">
+
+                                <div class="calendar">
+                              
+                                  <header>
+                              
+                                    <h2>September</h2>
+                              
+                                    <a class="btn-prev fontawesome-angle-left" href="#"></a>
+                                    <a class="btn-next fontawesome-angle-right" href="#"></a>
+                              
+                                  </header>
+                              
+                                  <table>
+                              
+                                    <thead>
+                              
+                                      <tr>
+                              
+                                        <td>Mo</td>
+                                        <td>Tu</td>
+                                        <td>We</td>
+                                        <td>Th</td>
+                                        <td>Fr</td>
+                                        <td>Sa</td>
+                                        <td>Su</td>
+                              
+                                      </tr>
+                              
+                                    </thead>
+                              
+                                    <tbody>
+                              
+                                      <tr>
+                                        <td class="prev-month">26</td>
+                                        <td class="prev-month">27</td>
+                                        <td class="prev-month">28</td>
+                                        <td class="prev-month">29</td>
+                                        <td class="prev-month">30</td>
+                                        <td class="prev-month">31</td>
+                                        <td>1</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                      </tr>
+                                      <tr>
+                                        <td>9</td>
+                                        <td class="event">10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                      </tr>
+                                      <tr>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td class="event">21</td>
+                                        <td>22</td>
+                                      </tr>
+                              
+                                      <tr>
+                                        <td class="current-day event">23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                      </tr>
+                                      <tr>
+                                        <td>30</td>
+                                        <td class="next-month">1</td>
+                                        <td class="next-month">2</td>
+                                        <td class="next-month">3</td>
+                                        <td class="next-month">4</td>
+                                        <td class="next-month">5</td>
+                                        <td class="next-month">6</td>
+                                      </tr>
+                              
+                                    </tbody>
+                              
+                                  </table>
+                              
+                                </div> 
+                              
+                              </div>  
+
+
+                            -->
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ROW 2 END-->
+
+
+   </div>
+
+
+
+
+
+
+
+
+        
+
+</body>
+</html>
