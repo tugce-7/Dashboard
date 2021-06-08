@@ -1,5 +1,8 @@
 # Dashboard
 
+-------
+Henüz tamamlanmadı, son değişiklikler üzerinde çalışıyorum.
+-----
 Dashboard user panel Free Vector
 
 ## Dashboard User Panel
