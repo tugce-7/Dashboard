@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Tammudu+2&family=Maven+Pro&display=swap" rel="stylesheet"></head>
-    <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-  rel="stylesheet"
-/>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Tammudu+2&family=Maven+Pro&display=swap" rel="stylesheet">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+  rel="stylesheet"/>
+
+
+
+
+</head>
 <body>
 <!--Sidebar Menu-->
-    <input type="checkbox" id="check">
+    <input type="checkbox" id="check" style="display: none;">
     <div class="sidebar">
         <ul>
             <li>
@@ -56,62 +59,186 @@
 
 <!-- Main Content-->
     <div class="main-content">
+
         <!--HEADER-->
          <div class=" header row ml-1 mt-4 ">
                 <div class="col-10   d-flex justify-content-start ">
                     <h3>
-                        <label for="check" >
-                        <i class="fas fa-bars"></i>
-                        
-                        </label>DASHBOARD
-                       
+                        <label for="check"  >
+                        <i class="fas fa-bars"></i>                        
+                        </label>                       
                     </h3>      
-                    <div style="margin-left: 30px;">
+                    <div style="margin-left: 20px;">
                         <p>Welcome!</p>
-                        <h4 style="margin-top: 0;">JANE DOE</h4></div>                       
+                        <h4 style="margin-top: 0;">JANE DOE</h4>
+                    </div>                       
                    
 
                 </div>
                 <div class="col-2 ml-auto">
                     <button class="btn btn-light  " style="border-radius: 20px; background-color:#6c5ce7; border: none; color:honeydew;">New Project</button>
-                </div>
-            
+                </div>           
 
          </div>
          <!--HEADER-->
 
+
          <!-- ROW 1-->
-         <div class=" container mt-3 mb-5 mr-2 ml-2">
+        <div class=" container mt-2 ml-2">
             <div class="row">
                 <!--ISTATISTIC TABLE-->
-                <div class="col-8">                
-                    <div class="card shadow " style="width:700px; height: 250px; background-color:honeydew  ; color:#6c5ce7;">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <p style="font-weight:bold; margin-bottom: 0;">STATISTIC </p>
-                                <p class="card-text">Processes</p>
+                <div class="col-md-8 mr-4 card shadow"style="width:730px; height: 250px; background-color:honeydew ; color:#a5b1c2; ">  
+                    <div class="row">            
+                        <div class="col-md-8" style="color:#a5b1c2;border-right: #a5b1c2 1px solid; height: 250px;" >    
+                            <div class="card-title">STATISTICS
+                                 <p>Processes</p>
                             </div>
-                            <div class="card-body">
-                                <canvas id="lineChart"></canvas>
-                            </div>
-                        </div>
-                        
-                        
+                            <div class="set-size charts-container" style="display:block !important">
 
-                    </div>
-                
-                
+                                    <div class="pie-wrapper progress-orange style-o">
+                                        <span class="label">25<span class="smaller style-o" >%</span></span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                        <p class="label-text">Back End</p>
+                                        <div class="state style-o ">
+                                            <p class="state-text">Overdue</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pie-wrapper progress-purple style-p">
+                                        <span class="label">50<span class="smaller style-p">%</span></span>
+                                        <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                        <p class="label-text">Front End</p>
+                                        <div class="state style-p  "> 
+                                             <p class="state-text">Delayed</p>        
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pie-wrapper progress-green style-g">
+                                        <span class="label">62<span class="smaller">%</span></span>
+                                        <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                        <p class="label-text">Design</p>
+                                        <div class="state style-g ">
+                                            <p class="state-text style-g">On track</p>        
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="pie-wrapper progress-green style-g">
+                                        <span class="label">75<span class="smaller">%</span></span>
+                                        <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                        <p class="label-text">Copyrighting</p>
+                                        <div class="state style-g ">
+                                            <p class="state-text">On track</p>        
+                                        </div>
+
+
+                                    </div>
+                                   
+            
+                            </div>
+                        </div>  
+
+                        <div class="col-md-4" >
+                             
+                            <div class="container" style="margin-top: -20px;" >
+                                <i class="fas fa-ellipsis-h" style="float:right; margin-top: 20px; "></i>
+                                <br>
+                                <h6 style="font-weight: bold;">Deadlines</h6>
+                                <div class="row elements-style">                                
+                                        <p style="margin-bottom:-10px ;">Back End</p>
+                                        <div class="col-md-6">
+                                            <div class="progress-wrap progress" data-progress-percent="25" style="border-radius:50px; width:5rem; height: 8px; margin-bottom: 5px; ">
+                                            <div class="progress-bar progress" style="background-color: #fa8231; width: 25%; height: 8px;"></div>
+                                        </div></div>
+                                        <div class="col-md-6 mt-3 "><p style="font-size:13px;"><i class="far fa-calendar-alt"></i> 30/01</p></div>
+                                </div>
+                                <div class="row elements-style">                                
+                                    <p style="margin-bottom:-10px ;">Front End</p>
+                                    <div class="col-md-6">
+                                        <div class="progress-wrap progress" data-progress-percent="25" style="border-radius:50px; width:5rem; height: 8px; margin-bottom: 5px; ">
+                                        <div class="progress-bar progress" style="background-color: #6c5ce7; width: 50%; height: 8px;"></div>
+                                    </div></div>
+                                    <div class="col-md-6 mt-3 "><p style="font-size:13px;"><i class="far fa-calendar-alt"></i> 25/01</p></div>
+                                </div>
+                                <div class="row elements-style">                                
+                                    <p style="margin-bottom:-10px ;">Design</p>
+                                    <div class="col-md-6">
+                                        <div class="progress-wrap progress" data-progress-percent="25" style="border-radius:50px; width:5rem; height: 8px; margin-bottom: 5px; ">
+                                        <div class="progress-bar progress" style="background-color: #26de81; width: 62%; height: 8px;"></div>
+                                    </div></div>
+                                    <div class="col-md-6 mt-3 "><p style="font-size:13px;"><i class="far fa-calendar-alt"></i> 12/01</p></div>
+                                </div>
+                                <div class="row elements-style">                                
+                                    <p style="margin-bottom:-10px ;">Copyrighting</p>
+                                    <div class="col-md-6">
+                                        <div class="progress-wrap progress" data-progress-percent="25" style="border-radius:50px; width:5rem; height: 8px; margin-bottom: 5px; ">
+                                        <div class="progress-bar progress" style="background-color: #26de81; width: 75%; height: 8px;"></div>
+                                    </div></div>
+                                    <div class="col-md-6 mt-3 "><p style="font-size:13px;"><i class="far fa-calendar-alt"></i> 12/01</p></div>
+                                </div>
+                         
+
+
+                            
+
+                        
+                            </div>
+
+                        </div>  
+                    </div>  
+
+
+                      
+                       
+                       
                 </div>
+                
+                
                 <!-- 2 CARDS-->
-                <div class="col-4">
+                <div class="col-md-4 ml-0">
                     <div class="row">
                         <div class="card shadow" style="width:430px; height:120px; background-color:  #6c5ce7; color:honeydew;">
                             <div class="card-body">
-                            <div class="card-title">
-                                <h6 style=" margin-bottom: 0;">MONTHLY GOAL</h6>
-                                <p class="card-text ">January</p></div>
-                            
-                             </div>
+                                <div class="row"> 
+                                    <div class="col-md-8">
+                                        <div class="card-title">
+                                            <h6 style=" margin-bottom: 0;">MONTHLY GOAL</h6>
+                                            <p class="card-text ">January</p>
+                                   
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"><div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle position-absolute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Monthly
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div></div>
+
+                                </div>
+                            </div>
+                           
                             <div class="card-body mb-5">
                             <span><i class="fas fa-dollar-sign fa-1x"></i></span>
                             <span style="font-size: 36px; font-weight: bold;">1.000.000 </span>
@@ -124,12 +251,25 @@
                     <div class="row mt-2">
                         <div class="card shadow" style="width:430px; height:120px; background-color:honeydew  ; color:#6c5ce7;">
                             <div class="card-body ">
-                                <div class="card-title ">PROJECTION <i class="fas fa-ellipsis-h"></i>
-                                <p class="card-text">January 4th </p>
+
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="card-title ">PROJECTION 
+                                            <p class="card-text">January 4th </p>
+                                            </div>
+                                           
+                                    </div>
+                                    <div class="col-md-5">
+                                        <i class="fas fa-ellipsis-h" style="float:right;"></i>
+                                        <br>
+                                        <br>
+                                   
+                                        <span><i class="fas fa-dollar-sign fa-1x"></i></span>
+                                        <span style="font-size: 25px; font-weight: bold;">265.000 </span></div>
+
                                 </div>
-                                <span><i class="fas fa-dollar-sign fa-1x"></i></span>
-                            <span style="font-size: 25px; font-weight: bold;">265.000 </span>
-                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,6 +278,15 @@
         </div>
         <!--ROW 1 END-->
 
+        <div class="container">
+         
+         
+
+
+
+
+</div>
+    
 
         <!--ROW 2 -->
         <div class="container mt-5 mb-5">
@@ -145,47 +294,55 @@
                 <!--CHAT PANEL-->
                 <div class="col-4">
                     <div class="card shadow" style="width:350px; height: 400px; background-color:honeydew  ; color:#6c5ce7;">
-                            <div class="card-body justify-content-between">
-                                 <p>CHAT<i class="fas fa-ellipsis-h"></i></p> 
+                            <div class="card-body">
+                                <div class="row ">
+                                    <div class="col-md-10"> <p>CHAT</p></div>
+                                    <div class="col-md-2"> <i class="fas fa-ellipsis-h"  ></i>
+                                </div>
+
+                                </div>
+                                
                             
-                             <div id="friends">
+                             <div id="chat">
                                 <div class="friend">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_deep-purple_white_letter-p.svg/640px-Eo_circle_deep-purple_white_letter-p.svg.png" />
                                     <p>
                                         <strong>Peter Dawson</strong><br>
                                         <span>Developer</span>
                                     </p>
-                                    <div class="status available"></div>
+                                    <div class="status available">
+                                        <p class="status-text">Active</p>
+
+                                    </div>
                                 </div>
-                                
                                 <div class="friend">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Eo_circle_deep-purple_letter-g.svg/640px-Eo_circle_deep-purple_letter-g.svg.png" />
                                     <p>
                                         <strong>Gina Stewart</strong><br>
-                                        <span>Designer</span>
+                                        <span>Developer</span>
                                     </p>
-                                    <div class="status available"></div>
+                                    <div class="status available">
+
+                                    </div>
                                 </div>
-                                
                                 <div class="friend">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eo_circle_deep-purple_letter-j.svg/640px-Eo_circle_deep-purple_letter-j.svg.png" />
                                     <p>
                                         <strong>Janet Smith</strong><br>
                                         <span>Frontend Developer</span>
                                     </p>
-                                    <div class="status  available"></div>
+                                  
                                 </div>
-                                
                                 <div class="friend">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Eo_circle_deep-purple_white_letter-m.svg/640px-Eo_circle_deep-purple_white_letter-m.svg.png" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_deep-purple_white_letter-p.svg/640px-Eo_circle_deep-purple_white_letter-p.svg.png" />
                                     <p>
                                         <strong>Mia Wilde</strong><br>
                                         <span>Copyrighter</span>
                                     </p>
-                                    <div class="status busy"></div>
+                                   
                                 </div>
                                 
-                               
+                                                          
                                 
                             </div> 
                             
@@ -194,151 +351,123 @@
                         </div>   
                     </div>
                 </div>
-                <!-- CALENDAR-->
+                
                 <div class="col-8">
                     <div class="card shadow" style="width:750px; height: 400px; background-color:honeydew  ; color:#6c5ce7;">
                         <div class="card-body">
                            <div class="row">
-                            <div class="col-6">                                
-                                <p>UPCOMING APPOINTMENTS</p> 
+                               <!--  Upcoming Appointments-->
+                            <div class="col-6" style="color:#a5b1c2;border-right: #a5b1c2 1px solid; height: 400px ; margin-top: -17px;">                                
+                                <p style="margin-top: 15px;">UPCOMING APPOINTMENTS</p> 
                                 <div id="friends">
                                     <div class="friend">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_deep-purple_white_letter-p.svg/640px-Eo_circle_deep-purple_white_letter-p.svg.png" />
                                         <p>
                                             <strong>Peter Dawson</strong><br>
                                             <span>Developer</span>
+                                           
                                         </p>
-                                        <div class="status available"></div>
+                                        
+
                                     </div>
                                     
-                                    <div class="friend">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Eo_circle_deep-purple_letter-g.svg/640px-Eo_circle_deep-purple_letter-g.svg.png" />
-                                        <p>
-                                            <strong>Gina Stewart</strong><br>
-                                            <span>Designer</span>
-                                        </p>
-                                        <div class="status available"></div>
-                                    </div>
-                                    
-                                    <div class="friend">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eo_circle_deep-purple_letter-j.svg/640px-Eo_circle_deep-purple_letter-j.svg.png" />
-                                        <p>
-                                            <strong>Janet Smith</strong><br>
-                                            <span>Frontend Developer</span>
-                                        </p>
-                                        <div class="status  available"></div>
-                                    </div>
+                              
                                 </div>
 
 
 
                             </div>
-                            <div class="col-6">CALENDAR</div>
+                        <!-- CALENDAR-->
+                            <div class="col-6">
+                                <div class="container">
+                                    <div class="calendar">
 
-                           </div>
+                                        <header>                              
+                                            <h6>January</h6>      
+                                            <p>2020</p>                                
+                                            <a class="btn-prev fontawesome-angle-left" href="#">
+                                                <i class="fas fa-arrow-left"></i>
+                                            </a>
+                                            <a class="btn-next fontawesome-angle-right" href="#">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </a>                                      
+                                          </header>
 
-                            <!-- <div class="container">
+                                          <table >
 
-                                <div class="calendar">
+                                            <thead>
                               
-                                  <header>
-                              
-                                    <h2>September</h2>
-                              
-                                    <a class="btn-prev fontawesome-angle-left" href="#"></a>
-                                    <a class="btn-next fontawesome-angle-right" href="#"></a>
-                              
-                                  </header>
-                              
-                                  <table>
-                              
-                                    <thead>
-                              
-                                      <tr>
-                              
-                                        <td>Mo</td>
-                                        <td>Tu</td>
-                                        <td>We</td>
-                                        <td>Th</td>
-                                        <td>Fr</td>
-                                        <td>Sa</td>
-                                        <td>Su</td>
-                              
-                                      </tr>
-                              
-                                    </thead>
-                              
-                                    <tbody>
-                              
-                                      <tr>
-                                        <td class="prev-month">26</td>
-                                        <td class="prev-month">27</td>
-                                        <td class="prev-month">28</td>
-                                        <td class="prev-month">29</td>
-                                        <td class="prev-month">30</td>
-                                        <td class="prev-month">31</td>
-                                        <td>1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                        <td>6</td>
-                                        <td>7</td>
-                                        <td>8</td>
-                                      </tr>
-                                      <tr>
-                                        <td>9</td>
-                                        <td class="event">10</td>
-                                        <td>11</td>
-                                        <td>12</td>
-                                        <td>13</td>
-                                        <td>14</td>
-                                        <td>15</td>
-                                      </tr>
-                                      <tr>
-                                        <td>16</td>
-                                        <td>17</td>
-                                        <td>18</td>
-                                        <td>19</td>
-                                        <td>20</td>
-                                        <td class="event">21</td>
-                                        <td>22</td>
-                                      </tr>
-                              
-                                      <tr>
-                                        <td class="current-day event">23</td>
-                                        <td>24</td>
-                                        <td>25</td>
-                                        <td>26</td>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                      </tr>
-                                      <tr>
-                                        <td>30</td>
-                                        <td class="next-month">1</td>
-                                        <td class="next-month">2</td>
-                                        <td class="next-month">3</td>
-                                        <td class="next-month">4</td>
-                                        <td class="next-month">5</td>
-                                        <td class="next-month">6</td>
-                                      </tr>
-                              
-                                    </tbody>
-                              
-                                  </table>
-                              
-                                </div> 
-                              
-                              </div>  
+                                                <tr>   
+                                                  <td>Su</td>                                      
+                                                  <td>Mo</td>
+                                                  <td>Tu</td>
+                                                  <td>We</td>
+                                                  <td>Th</td>
+                                                  <td>Fr</td>
+                                                  <td>Sa</td>                                                
+                                        
+                                                </tr>                                        
+                                              </thead>
 
+                                              <tbody >
+                                                <tr>
+                                                    <td class="prev-month">29</td>
+                                                    <td class="prev-month">30</td>
+                                                    <td class="prev-month">31</td>                                                 
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
 
-                            -->
+                                                  </tr>
+                                                  
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td>31</td>
+                                                    <td class="next-month">1</td>
+                                                </tr>
+                                              </tbody>
 
 
 
+
+                                          </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
 
 
 
@@ -356,13 +485,6 @@
    </div>
 
 
-
-
-
-
-
-
-        
 
 </body>
 </html>
